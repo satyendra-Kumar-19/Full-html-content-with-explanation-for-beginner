@@ -1,0 +1,42 @@
+------------------------------------------------------------
+3. ROLE OF HTML IN WEB DEVELOPMENT
+------------------------------------------------------------
+
+Modern web development commonly uses three core technologies.
+
+1. HTML — STRUCTURE
+   Defines what content exists and what that content means.
+
+2. CSS — PRESENTATION
+   Controls appearance, including colors, spacing, layout,
+   typography, and responsive design.
+
+3. JAVASCRIPT — BEHAVIOR
+   Adds interaction, dynamic updates, calculations, and logic.
+
+EXAMPLE:
+
+HTML:
+<h1>Welcome to My Website</h1>
+
+CSS:
+h1 {
+    color: blue;
+}
+
+JavaScript:
+alert("Welcome!");
+
+WHAT EACH TECHNOLOGY DOES:
+
+HTML creates the heading.
+CSS makes the heading blue.
+JavaScript displays a message.
+
+IMPORTANT:
+
+These technologies have different responsibilities, but they
+can work together to create a complete website.
+
+A website may also use a backend, database, APIs, and other
+technologies depending on its requirements.

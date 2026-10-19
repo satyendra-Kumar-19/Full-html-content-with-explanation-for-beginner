@@ -1,0 +1,1258 @@
+============================================================
+                    CHAPTER 1
+              INTRODUCTION TO HTML
+============================================================
+
+CONTENTS
+--------
+1. Introduction to HTML
+2. History of HTML
+3. Role of HTML in Web Development
+4. How HTML Works
+5. HTML Syntax and Terminology
+6. Understanding HTML Tags and Elements
+7. Basic Structure of an HTML Document
+8. Explanation of Important HTML Tags
+9. HTML Attributes
+10. Types of HTML Elements
+11. HTML Comments
+12. HTML Nesting and Indentation
+13. HTML File Creation and Execution
+14. Important Rules and Best Practices
+15. Complete Example
+16. Chapter Summary
+
+
+
+
+
+------------------------------------------------------------
+4. HOW HTML WORKS
+------------------------------------------------------------
+
+The basic process is:
+
+1. A developer writes HTML code.
+2. The code is saved in a file with the .html extension.
+3. A web browser opens the HTML document.
+4. The browser parses the HTML.
+5. The browser constructs a document structure called the DOM.
+6. The browser displays the page according to the document
+   structure and its associated styling.
+
+BASIC FLOW:
+
+Developer
+    |
+    v
+HTML Code
+    |
+    v
+HTML File
+    |
+    v
+Web Browser
+    |
+    v
+DOM and Page Rendering
+    |
+    v
+Web Page Displayed
+
+EXAMPLE:
+
+HTML CODE:
+<h1>Hello World</h1>
+<p>This is my first web page.</p>
+
+BROWSER OUTPUT:
+
+Hello World
+This is my first web page.
+
+The browser interprets the HTML elements and displays their
+content according to the browser's rendering rules.
+
+IMPORTANT:
+
+HTML describes the document's structure and meaning. The
+browser determines how that structure is rendered visually.
+
+
+------------------------------------------------------------
+5. HTML SYNTAX AND TERMINOLOGY
+------------------------------------------------------------
+
+Before learning individual tags, understand these terms.
+
+A. TAG
+
+A tag is markup written using angle brackets.
+
+Examples:
+
+<h1>
+</h1>
+<p>
+</p>
+
+B. OPENING TAG
+
+An opening tag marks the beginning of an element.
+
+Example:
+
+<p>
+
+C. CLOSING TAG
+
+A closing tag marks the end of an element.
+
+Example:
+
+</p>
+
+Notice the forward slash (/) in the closing tag.
+
+D. CONTENT
+
+The content is the information placed inside an element.
+
+Example:
+
+<p>Hello World</p>
+
+Here:
+<p>       = Opening tag
+Hello World = Content
+</p>      = Closing tag
+
+E. ELEMENT
+
+An HTML element consists of its opening tag, content, and
+closing tag when that element uses a closing tag.
+
+Example:
+
+<p>Hello World</p>
+
+The complete expression is a paragraph element.
+
+F. ATTRIBUTE
+
+An attribute provides additional information or configuration
+for an HTML element.
+
+Example:
+
+<p class="intro">Hello World</p>
+
+Here:
+class = Attribute name
+intro = Attribute value
+
+G. ELEMENT NAME
+
+The name identifies the kind of element being used.
+
+Examples:
+
+p     = Paragraph
+h1    = Level-one heading
+title = Document title
+body  = Main document content container
+
+
+------------------------------------------------------------
+6. HTML TAGS AND ELEMENTS
+------------------------------------------------------------
+
+Consider this example:
+
+<h1>Learning HTML</h1>
+
+It contains:
+
+- Opening tag: <h1>
+- Content: Learning HTML
+- Closing tag: </h1>
+- Element: The complete heading markup
+
+IMPORTANT DISTINCTION:
+
+A tag is the markup used to start or end an element.
+
+An element is the complete structure represented by that
+markup and its content, where applicable.
+
+EXAMPLE:
+
+<p>This is a paragraph.</p>
+
+This is a paragraph element.
+
+Another example:
+
+<img src="photo.jpg" alt="A photograph">
+
+The img element is a void element. It does not have a separate
+closing tag or contain child elements.
+
+
+------------------------------------------------------------
+7. BASIC STRUCTURE OF AN HTML DOCUMENT
+------------------------------------------------------------
+
+Every beginner should learn this structure first.
+
+EXAMPLE:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+</head>
+<body>
+
+    <h1>Welcome to HTML</h1>
+    <p>This is my first web page.</p>
+
+</body>
+</html>
+
+This is a standard starting template for a modern HTML page.
+
+DOCUMENT STRUCTURE:
+
+<!DOCTYPE html>
+        |
+        v
+<html>
+        |
+        +-----------------------+
+        |                       |
+        v                       v
+      <head>                  <body>
+        |                       |
+        v                       v
+ Metadata and settings    Visible page content
+        |                       |
+        v                       v
+   <title>, <meta>       Headings, paragraphs,
+                         images, links, etc.
+
+
+------------------------------------------------------------
+8. EXPLANATION OF IMPORTANT HTML TAGS
+------------------------------------------------------------
+
+8.1 <!DOCTYPE html>
+-------------------
+
+PURPOSE:
+Declares that the document uses modern HTML.
+
+EXAMPLE:
+
+<!DOCTYPE html>
+
+IMPORTANT FACTS:
+
+- It is a document type declaration, not a normal HTML element.
+- It should appear at the beginning of an HTML document.
+- It helps browsers use standards mode rather than quirks mode.
+- It is not an opening tag and does not require a closing tag.
+- Modern HTML uses this short declaration.
+
+WITHOUT IT:
+
+Some browsers may render the page in quirks mode, where
+certain older layout and rendering behaviors are used.
+
+BEST PRACTICE:
+
+Always include <!DOCTYPE html> at the beginning of the file.
+
+
+8.2 <html>
+-----------
+
+PURPOSE:
+The <html> element is the root element of an HTML document.
+
+EXAMPLE:
+
+<html lang="en">
+    <!-- The document's head and body go here -->
+</html>
+
+IMPORTANT FACTS:
+
+- It contains the document's head and body.
+- It is the root of the document's HTML structure.
+- It commonly includes the lang attribute.
+- A normal HTML document has one root html element.
+
+UNDERSTANDING lang="en":
+
+The lang attribute identifies the primary language of the
+document's content.
+
+Examples:
+
+<html lang="en">    English
+<html lang="hi">    Hindi
+<html lang="fr">    French
+
+WHY IS IT IMPORTANT?
+
+It helps assistive technologies, search engines, and other
+software interpret the language of the page.
+
+NOTE:
+
+The language code should match the primary language of
+your document.
+
+
+8.3 <head>
+----------
+
+PURPOSE:
+Contains metadata and resources associated with the document.
+
+EXAMPLE:
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+</head>
+
+COMMON CONTENTS OF HEAD:
+
+- Document title
+- Character encoding
+- Viewport settings
+- Search-related metadata
+- CSS stylesheet links
+- Favicons
+- Some scripts and other resources
+
+IMPORTANT FACTS:
+
+- The head is not the main visible content area of the page.
+- Its contents provide information about the document or
+  resources needed by the browser.
+- The title may appear in the browser tab.
+- The head is different from the header element.
+
+IMPORTANT DISTINCTION:
+
+<head> = Document metadata and resources.
+
+<header> = A visible structural section of a page or section,
+           commonly containing introductory content or
+           navigation.
+
+
+8.4 <meta>
+----------
+
+PURPOSE:
+Provides metadata about the HTML document.
+
+A meta element does not use a separate closing tag.
+
+COMMON EXAMPLE 1: CHARACTER ENCODING
+
+<meta charset="UTF-8">
+
+PURPOSE:
+Specifies the character encoding used by the document.
+
+UTF-8 supports text from a wide range of writing systems.
+
+It helps the browser interpret characters correctly.
+
+COMMON EXAMPLE 2: VIEWPORT
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+PURPOSE:
+Helps the page use the device's viewport width and an
+appropriate initial scale on mobile devices.
+
+WITHOUT APPROPRIATE VIEWPORT SETTINGS:
+
+A page may not behave as expected on mobile screens.
+
+COMMON EXAMPLE 3: DESCRIPTION
+
+<meta name="description" content="Learn the basics of HTML.">
+
+PURPOSE:
+Provides a short description of the page.
+
+Search engines may use this description when displaying
+search results, but they are not required to do so.
+
+IMPORTANT:
+
+Metadata provides information about a document; it does not
+automatically guarantee better search rankings.
+
+
+8.5 <title>
+-----------
+
+PURPOSE:
+Defines the document's title.
+
+EXAMPLE:
+
+<title>HTML Chapter 1</title>
+
+WHERE DOES IT APPEAR?
+
+- Commonly in the browser tab
+- In bookmarks and saved page references
+- Potentially in search result titles, depending on the
+  search engine
+
+IMPORTANT FACTS:
+
+- The title belongs inside the head element.
+- It is not the same as a visible heading.
+- It should describe the page clearly.
+- A document should have one meaningful title.
+
+COMPARISON:
+
+<title>My Website</title>
+
+This sets the document title.
+
+<h1>Welcome to My Website</h1>
+
+This creates a visible main heading in the page content.
+
+
+8.6 <body>
+-----------
+
+PURPOSE:
+Contains the main content of the HTML document.
+
+EXAMPLE:
+
+<body>
+    <h1>My First Website</h1>
+    <p>Welcome to my website.</p>
+</body>
+
+COMMON BODY CONTENT:
+
+- Headings
+- Paragraphs
+- Images
+- Links
+- Lists
+- Tables
+- Forms
+- Navigation
+- Videos
+
+IMPORTANT FACTS:
+
+- The body contains the document's main visible content.
+- A standard HTML document has one body element.
+- Most content that users read or interact with belongs here.
+
+REMEMBER:
+
+<head> describes the document and its resources.
+
+<body> contains the page's main content.
+
+
+8.7 <h1> TO <h6>
+----------------
+
+PURPOSE:
+Represent six levels of headings.
+
+EXAMPLE:
+
+<h1>Main Heading</h1>
+<h2>Section Heading</h2>
+<h3>Subsection Heading</h3>
+<h4>Level Four Heading</h4>
+<h5>Level Five Heading</h5>
+<h6>Level Six Heading</h6>
+
+HEADING LEVELS:
+
+<h1> = Highest heading level
+<h2> = Second heading level
+<h3> = Third heading level
+<h4> = Fourth heading level
+<h5> = Fifth heading level
+<h6> = Lowest heading level
+
+BEST PRACTICE:
+
+Use heading levels to represent the hierarchy of your content.
+
+For example:
+
+<h1>HTML Tutorial</h1>
+
+<h2>Introduction</h2>
+<p>Introduction content...</p>
+
+<h2>HTML Elements</h2>
+<p>Element-related content...</p>
+
+<h3>Void Elements</h3>
+<p>Void element content...</p>
+
+IMPORTANT:
+
+Do not choose a heading level only because of its default
+font size. CSS should control visual styling.
+
+
+8.8 <p>
+--------
+
+PURPOSE:
+Defines a paragraph.
+
+EXAMPLE:
+
+<p>HTML structures content on a web page.</p>
+
+IMPORTANT FACTS:
+
+- A paragraph is a block of text content.
+- Browsers commonly display paragraphs as separate blocks.
+- Browsers normally provide spacing around paragraphs.
+- CSS can change their appearance and spacing.
+
+NOTE:
+
+Browsers may automatically close a paragraph when the HTML
+rules require it, but beginners should always write clear,
+well-structured markup.
+
+
+8.9 <br>
+---------
+
+PURPOSE:
+Creates a line break within text.
+
+EXAMPLE:
+
+<p>
+    First line<br>
+    Second line
+</p>
+
+OUTPUT:
+
+First line
+Second line
+
+IMPORTANT FACTS:
+
+- <br> is a void element.
+- It does not require a closing tag.
+- Use it when a line break is meaningful.
+
+Do not use repeated <br> elements to create large amounts
+of spacing. Use CSS for layout and spacing instead.
+
+
+8.10 <hr>
+----------
+
+PURPOSE:
+Represents a thematic break between sections of content.
+
+EXAMPLE:
+
+<p>Introduction to HTML.</p>
+<hr>
+<p>Introduction to CSS.</p>
+
+IMPORTANT FACTS:
+
+- It is a void element.
+- It often appears as a horizontal line by default.
+- Its meaning is a thematic break, not merely decoration.
+
+CSS can change its visual appearance.
+
+
+8.11 <!-- Comment -->
+--------------------
+
+PURPOSE:
+Adds a comment to the HTML source code.
+
+EXAMPLE:
+
+<!-- This is a comment -->
+
+<h1>Welcome</h1>
+
+IMPORTANT FACTS:
+
+- Comments are not displayed as ordinary page content.
+- They help developers explain sections of code.
+- They can be used to temporarily annotate code.
+- They begin with <!-- and end with -->.
+
+WARNING:
+
+Do not put passwords, secret keys, or private information
+inside HTML comments. Source code can be viewed by users.
+
+
+------------------------------------------------------------
+9. HTML ATTRIBUTES
+------------------------------------------------------------
+
+An attribute provides additional information or configuration
+for an HTML element.
+
+GENERAL SYNTAX:
+
+<tagname attribute="value">Content</tagname>
+
+EXAMPLE:
+
+<a href="https://example.com">Visit Example</a>
+
+Here:
+
+a      = Element name
+href   = Attribute name
+URL    = Attribute value
+Visit Example = Link text
+
+COMMON ATTRIBUTES:
+
+1. id
+   Identifies an element within a document.
+
+   <h1 id="main-heading">Welcome</h1>
+
+2. class
+   Assigns one or more class names to an element.
+
+   <p class="intro">Introduction paragraph.</p>
+
+3. style
+   Applies inline CSS.
+
+   <p style="color: blue;">Blue text</p>
+
+4. title
+   Provides advisory information, often shown as a tooltip
+   by browsers when applicable.
+
+   <p title="Additional information">Hover over this text.</p>
+
+5. href
+   Specifies a link destination.
+
+   <a href="about.html">About Us</a>
+
+6. src
+   Specifies the source of a resource, such as an image.
+
+   <img src="photo.jpg" alt="A photograph">
+
+7. alt
+   Provides alternative text for an image.
+
+   <img src="logo.png" alt="Company logo">
+
+8. lang
+   Identifies the language of an element's content.
+
+   <html lang="en">
+
+9. width
+   Specifies a width for supported elements.
+
+   <img src="photo.jpg" alt="A photograph" width="300">
+
+10. height
+    Specifies a height for supported elements.
+
+    <img src="photo.jpg" alt="A photograph" height="200">
+
+11. name
+    Names a resource or form control, depending on the element.
+
+    <input type="text" name="username">
+
+12. type
+    Specifies a type or behavior, depending on the element.
+
+    <input type="email">
+
+IMPORTANT ATTRIBUTE RULES:
+
+- Attributes are written inside an opening tag.
+- Most attribute values should be enclosed in quotation marks.
+- Some attributes are global and work on many HTML elements.
+- Other attributes work only with particular elements.
+- Attribute names should be written in lowercase by convention.
+- An element can have multiple attributes.
+
+EXAMPLE:
+
+<img
+    src="student.jpg"
+    alt="Student reading a book"
+    width="300"
+>
+
+This image element has three attributes:
+
+src
+alt
+width
+
+
+------------------------------------------------------------
+10. TYPES OF HTML ELEMENTS
+------------------------------------------------------------
+
+HTML elements can be classified in several ways.
+
+A. ELEMENTS WITH OPENING AND CLOSING TAGS
+
+These elements commonly contain text or other elements.
+
+EXAMPLES:
+
+<p>This is a paragraph.</p>
+
+<h1>Main Heading</h1>
+
+<div>Container content</div>
+
+B. VOID ELEMENTS
+
+Void elements cannot contain child elements and do not have
+closing tags.
+
+COMMON VOID ELEMENTS:
+
+- <area>
+- <base>
+- <br>
+- <col>
+- <embed>
+- <hr>
+- <img>
+- <input>
+- <link>
+- <meta>
+- <source>
+- <track>
+- <wbr>
+
+EXAMPLE:
+
+<img src="photo.jpg" alt="A photograph">
+
+CORRECT:
+
+<br>
+<hr>
+<img src="photo.jpg" alt="A photograph">
+
+INCORRECT HTML:
+
+<br></br>
+<img src="photo.jpg" alt="A photograph"></img>
+
+IMPORTANT:
+
+In HTML, a trailing slash is unnecessary for void elements.
+
+For example:
+
+<br>
+
+and
+
+<br />
+
+are accepted by HTML parsers, but the slash in <br /> does
+not make it an element with a closing tag.
+
+C. BLOCK AND INLINE DISPLAY
+
+Traditionally, beginner tutorials classify many elements as
+block-level or inline elements.
+
+BLOCK-LIKE ELEMENTS:
+
+Common examples include:
+
+<div>
+<p>
+<h1>
+<section>
+
+They commonly begin on a new line in the browser's default
+styling.
+
+INLINE-LIKE ELEMENTS:
+
+Common examples include:
+
+<span>
+<a>
+<strong>
+<em>
+
+They commonly flow within the surrounding line of text.
+
+IMPORTANT:
+
+Block and inline describe common display behavior, not the
+fundamental HTML category of an element.
+
+CSS can change an element's display behavior. Modern HTML
+also uses semantic categories such as phrasing content and
+flow content.
+
+
+------------------------------------------------------------
+11. HTML COMMENTS
+------------------------------------------------------------
+
+Comments allow developers to add notes to HTML source code.
+
+SYNTAX:
+
+<!-- Your comment goes here -->
+
+EXAMPLE:
+
+<!-- Main heading -->
+<h1>HTML Basics</h1>
+
+<!-- Introduction paragraph -->
+<p>HTML defines the structure of web content.</p>
+
+MULTILINE COMMENT:
+
+<!--
+This is a multiline comment.
+It can contain several lines of notes.
+-->
+
+IMPORTANT:
+
+- Comments are not displayed as ordinary page content.
+- Comments can help organize source code.
+- Comments are not a security feature.
+- Avoid placing sensitive information inside comments.
+
+
+------------------------------------------------------------
+12. HTML NESTING AND INDENTATION
+------------------------------------------------------------
+
+A. NESTING
+
+Nesting means placing one element inside another element.
+
+EXAMPLE:
+
+<div>
+    <h1>My Website</h1>
+    <p>Welcome to my website.</p>
+</div>
+
+Here:
+
+- div is the parent element.
+- h1 and p are child elements.
+- h1 and p are siblings.
+
+B. CORRECT NESTING
+
+<p>This is <strong>important</strong> text.</p>
+
+The strong element opens and closes inside the paragraph.
+
+C. INCORRECT NESTING
+
+<p>This is <strong>important text.</p></strong>
+
+The tags are improperly nested.
+
+CORRECT VERSION:
+
+<p>This is <strong>important text</strong>.</p>
+
+D. INDENTATION
+
+Indentation means adding spaces at the beginning of lines
+to make the structure easier to understand.
+
+EXAMPLE:
+
+<html>
+    <head>
+        <title>My Website</title>
+    </head>
+
+    <body>
+        <h1>Welcome</h1>
+        <p>Hello World.</p>
+    </body>
+</html>
+
+BENEFITS:
+
+- Improves readability.
+- Makes parent-child relationships easier to identify.
+- Helps developers find errors.
+- Makes large projects easier to maintain.
+
+IMPORTANT:
+
+Indentation improves readability, but spaces and line breaks
+do not generally determine HTML structure in the way they
+do in some programming languages.
+
+
+------------------------------------------------------------
+13. HTML FILE CREATION AND EXECUTION
+------------------------------------------------------------
+
+You can write HTML using a text editor or a code editor.
+
+COMMON TOOLS:
+
+- Visual Studio Code
+- Notepad
+- Other text editors
+- Browser-based HTML editors
+
+STEPS:
+
+STEP 1:
+Create a folder for your project.
+
+Example:
+my-website
+
+STEP 2:
+Open the folder in your code editor.
+
+STEP 3:
+Create a new file.
+
+Example:
+index.html
+
+STEP 4:
+Write the following code.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>I am learning HTML.</p>
+</body>
+</html>
+
+STEP 5:
+Save the file.
+
+STEP 6:
+Open index.html in a web browser.
+
+STEP 7:
+To see your changes, save the file and refresh the browser.
+
+IMPORTANT:
+
+The file extension must be .html.
+
+For example:
+
+index.html     Correct
+index.txt      Not an HTML file by extension
+index.html.txt Usually a text file, not an HTML file by extension
+
+
+------------------------------------------------------------
+14. IMPORTANT RULES AND BEST PRACTICES
+------------------------------------------------------------
+
+1. Always begin a modern HTML document with:
+
+   <!DOCTYPE html>
+
+2. Use lowercase tag and attribute names by convention.
+
+3. Use meaningful document titles.
+
+4. Include character encoding:
+
+   <meta charset="UTF-8">
+
+5. Include viewport settings for responsive pages:
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+6. Use the lang attribute:
+
+   <html lang="en">
+
+7. Close elements that require closing tags.
+
+8. Nest elements correctly.
+
+9. Use indentation to improve readability.
+
+10. Use meaningful heading levels.
+
+11. Provide useful alternative text for meaningful images.
+
+12. Use CSS rather than HTML spacing tricks for layout.
+
+13. Use semantic HTML elements when they match the purpose
+    of the content.
+
+14. Keep the document structure clear and consistent.
+
+15. Validate HTML when you need to check for markup errors.
+
+16. Do not use HTML alone when you need complex interactivity
+    or application logic; use JavaScript where appropriate.
+
+17. Remember that HTML defines structure and meaning, while
+    CSS controls presentation and JavaScript adds behavior.
+
+18. Learn to write HTML before relying heavily on frameworks.
+
+
+------------------------------------------------------------
+15. COMPLETE EXAMPLE
+------------------------------------------------------------
+
+Create a file named:
+
+index.html
+
+WRITE THIS CODE:
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="A beginner's introduction to HTML.">
+
+    <title>HTML Chapter 1</title>
+</head>
+
+<body>
+
+    <!-- Main heading -->
+    <h1>Welcome to HTML</h1>
+
+    <!-- Introduction -->
+    <p>
+        HTML stands for HyperText Markup Language.
+        It defines the structure of web pages.
+    </p>
+
+    <hr>
+
+    <!-- Another section -->
+    <h2>Why Learn HTML?</h2>
+
+    <p>
+        HTML is the foundation of web development.
+        It works with CSS and JavaScript to build websites.
+    </p>
+
+</body>
+
+</html>
+
+
+UNDERSTANDING THE EXAMPLE:
+
+<!DOCTYPE html>
+Declares modern HTML.
+
+<html lang="en">
+Starts the root element and identifies the document language.
+
+<head>
+Contains metadata and resources.
+
+<meta charset="UTF-8">
+Specifies the character encoding.
+
+<meta name="viewport" ...>
+Provides viewport settings for mobile-friendly rendering.
+
+<meta name="description" ...>
+Provides a description of the page.
+
+<title>HTML Chapter 1</title>
+Sets the document title.
+
+<body>
+Contains the main page content.
+
+<!-- Main heading -->
+Adds a source-code comment.
+
+<h1>
+Defines the main heading.
+
+<p>
+Defines a paragraph.
+
+<hr>
+Represents a thematic break.
+
+<h2>
+Defines a second-level heading.
+
+</html>
+Closes the root element.
+
+
+------------------------------------------------------------
+16. CHAPTER SUMMARY
+------------------------------------------------------------
+
+HTML:
+The standard markup language for structuring web content.
+
+<!DOCTYPE html>:
+Declares modern HTML and helps enable standards mode.
+
+<html>:
+The root element of the document.
+
+<head>:
+Contains metadata and resources.
+
+<meta>:
+Provides metadata, such as character encoding.
+
+<title>:
+Defines the document title.
+
+<body>:
+Contains the main content of the page.
+
+<h1> to <h6>:
+Represent six heading levels.
+
+<p>:
+Defines a paragraph.
+
+<br>:
+Creates a line break.
+
+<hr>:
+Represents a thematic break.
+
+<!-- -->:
+Creates a comment.
+
+ATTRIBUTE:
+Provides additional information or configuration.
+
+ELEMENT:
+The complete HTML structure represented by its markup.
+
+NESTING:
+Placing one element inside another element.
+
+INDENTATION:
+Formatting code to make its structure easier to read.
+
+VOID ELEMENT:
+An element that cannot contain child elements and has no
+closing tag.
+
+
+------------------------------------------------------------
+PROFESSIONAL LEARNING SEQUENCE
+------------------------------------------------------------
+
+After completing Chapter 1, learn HTML in this order:
+
+CHAPTER 1:
+Introduction and Document Structure
+
+CHAPTER 2:
+Headings, Paragraphs, Text Formatting and Comments
+
+CHAPTER 3:
+Links and Navigation
+
+CHAPTER 4:
+Images, Audio and Video
+
+CHAPTER 5:
+Lists
+
+CHAPTER 6:
+Tables
+
+CHAPTER 7:
+Forms and Input Elements
+
+CHAPTER 8:
+Semantic HTML
+
+CHAPTER 9:
+HTML Attributes, IDs and Classes
+
+CHAPTER 10:
+HTML Entities, Paths and Special Characters
+
+CHAPTER 11:
+Accessibility and SEO Fundamentals
+
+CHAPTER 12:
+HTML Projects and Best Practices
+
+
+END OF CHAPTER 1
+============================================================

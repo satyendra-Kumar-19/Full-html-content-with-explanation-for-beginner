@@ -1,0 +1,60 @@
+
+------------------------------------------------------------
+2. HISTORY OF HTML
+------------------------------------------------------------
+
+HTML was developed to make it possible to organize and link
+documents across the World Wide Web.
+
+IMPORTANT MILESTONES:
+
+1989:
+Tim Berners-Lee proposed a system for sharing information
+among researchers at CERN.
+
+1991:
+The first publicly available description of HTML appeared.
+
+1993:
+HTML development continued, and proposals emerged to extend
+the language's capabilities.
+
+1995:
+HTML 2.0 was published as an early formal specification.
+
+1997:
+HTML 3.2 was published, followed by HTML 4.0 later that year.
+
+1999:
+HTML 4.01 was published.
+
+2000:
+XHTML 1.0 was published, reformulating HTML using XML rules.
+
+2004:
+The WHATWG was formed to continue developing HTML and related
+web technologies.
+
+2008:
+The first public working draft of HTML5 was published by W3C.
+
+2014:
+HTML5 became a W3C Recommendation.
+
+2019:
+WHATWG and W3C agreed that WHATWG's HTML Living Standard
+would be the continuously maintained standard for HTML.
+
+TODAY:
+HTML follows the HTML Living Standard, which evolves over time
+rather than relying exclusively on numbered versions.
+
+IMPORTANT FACTS:
+
+- Tim Berners-Lee created the original version of HTML.
+- HTML helped establish the structure of the World Wide Web.
+- HTML5 introduced and standardized many important web features.
+- Modern HTML supports multimedia, semantic elements, forms,
+  graphics-related elements, and more.
+- HTML continues to evolve through the Living Standard.
+

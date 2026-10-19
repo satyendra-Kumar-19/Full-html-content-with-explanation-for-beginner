@@ -1,0 +1,47 @@
+------------------------------------------------------------
+1. INTRODUCTION TO HTML
+------------------------------------------------------------
+
+HTML stands for HyperText Markup Language.
+
+It is the standard markup language used to define the structure
+and meaning of content on web pages.
+
+HTML allows developers to organize content such as:
+
+- Headings
+- Paragraphs
+- Images
+- Links
+- Lists
+- Tables
+- Forms
+- Videos
+- Audio
+
+DEFINITION:
+
+HTML is a markup language that uses elements and attributes
+to structure and describe content on a web page.
+
+UNDERSTANDING THE NAME:
+
+1. HyperText:
+   Text that contains links connecting one document or web
+   resource to another.
+
+2. Markup:
+   A system of tags used to identify and structure content.
+
+3. Language:
+   A formal system with defined syntax and rules.
+
+IMPORTANT FACT:
+
+HTML is a MARKUP LANGUAGE, not a programming language.
+
+HTML does not provide general-purpose programming features
+such as loops, conditions, and calculations by itself.
+
+JavaScript is commonly used to implement these types of
+interactive behaviors.
