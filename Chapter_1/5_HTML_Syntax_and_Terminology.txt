@@ -1,0 +1,85 @@
+
+
+------------------------------------------------------------
+5. HTML SYNTAX AND TERMINOLOGY
+------------------------------------------------------------
+
+Before learning individual tags, understand these terms.
+
+A. TAG
+
+A tag is markup written using angle brackets.
+
+Examples:
+
+<h1>
+</h1>
+<p>
+</p>
+
+B. OPENING TAG
+
+An opening tag marks the beginning of an element.
+
+Example:
+
+<p>
+
+C. CLOSING TAG
+
+A closing tag marks the end of an element.
+
+Example:
+
+</p>
+
+Notice the forward slash (/) in the closing tag.
+
+D. CONTENT
+
+The content is the information placed inside an element.
+
+Example:
+
+<p>Hello World</p>
+
+Here:
+<p>       = Opening tag
+Hello World = Content
+</p>      = Closing tag
+
+E. ELEMENT
+
+An HTML element consists of its opening tag, content, and
+closing tag when that element uses a closing tag.
+
+Example:
+
+<p>Hello World</p>
+
+The complete expression is a paragraph element.
+
+F. ATTRIBUTE
+
+An attribute provides additional information or configuration
+for an HTML element.
+
+Example:
+
+<p class="intro">Hello World</p>
+
+Here:
+class = Attribute name
+intro = Attribute value
+
+G. ELEMENT NAME
+
+The name identifies the kind of element being used.
+
+Examples:
+
+p     = Paragraph
+h1    = Level-one heading
+title = Document title
+body  = Main document content container
+

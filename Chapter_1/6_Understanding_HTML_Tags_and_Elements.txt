@@ -1,0 +1,36 @@
+
+------------------------------------------------------------
+6. HTML TAGS AND ELEMENTS
+------------------------------------------------------------
+
+Consider this example:
+
+<h1>Learning HTML</h1>
+
+It contains:
+
+- Opening tag: <h1>
+- Content: Learning HTML
+- Closing tag: </h1>
+- Element: The complete heading markup
+
+IMPORTANT DISTINCTION:
+
+A tag is the markup used to start or end an element.
+
+An element is the complete structure represented by that
+markup and its content, where applicable.
+
+EXAMPLE:
+
+<p>This is a paragraph.</p>
+
+This is a paragraph element.
+
+Another example:
+
+<img src="photo.jpg" alt="A photograph">
+
+The img element is a void element. It does not have a separate
+closing tag or contain child elements.
+

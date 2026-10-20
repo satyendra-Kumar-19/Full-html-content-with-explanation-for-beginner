@@ -1,0 +1,44 @@
+------------------------------------------------------------
+7. BASIC STRUCTURE OF AN HTML DOCUMENT
+------------------------------------------------------------
+
+Every beginner should learn this structure first.
+
+EXAMPLE:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+</head>
+<body>
+
+    <h1>Welcome to HTML</h1>
+    <p>This is my first web page.</p>
+
+</body>
+</html>
+
+This is a standard starting template for a modern HTML page.
+
+DOCUMENT STRUCTURE:
+
+<!DOCTYPE html>
+        |
+        v
+<html>
+        |
+        +-----------------------+
+        |                       |
+        v                       v
+      <head>                  <body>
+        |                       |
+        v                       v
+ Metadata and settings    Visible page content
+        |                       |
+        v                       v
+   <title>, <meta>       Headings, paragraphs,
+                         images, links, etc.
+

@@ -1,0 +1,51 @@
+------------------------------------------------------------
+4. HOW HTML WORKS
+------------------------------------------------------------
+
+The basic process is:
+
+1. A developer writes HTML code.
+2. The code is saved in a file with the .html extension.
+3. A web browser opens the HTML document.
+4. The browser parses the HTML.
+5. The browser constructs a document structure called the DOM.
+6. The browser displays the page according to the document
+   structure and its associated styling.
+
+BASIC FLOW:
+
+Developer
+    |
+    v
+HTML Code
+    |
+    v
+HTML File
+    |
+    v
+Web Browser
+    |
+    v
+DOM and Page Rendering
+    |
+    v
+Web Page Displayed
+
+EXAMPLE:
+
+HTML CODE:
+<h1>Hello World</h1>
+<p>This is my first web page.</p>
+
+BROWSER OUTPUT:
+
+Hello World
+This is my first web page.
+
+The browser interprets the HTML elements and displays their
+content according to the browser's rendering rules.
+
+IMPORTANT:
+
+HTML describes the document's structure and meaning. The
+browser determines how that structure is rendered visually.

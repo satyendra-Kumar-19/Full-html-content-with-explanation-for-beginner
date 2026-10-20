@@ -1,0 +1,108 @@
+------------------------------------------------------------
+9. HTML ATTRIBUTES
+------------------------------------------------------------
+
+An attribute provides additional information or configuration
+for an HTML element.
+
+GENERAL SYNTAX:
+
+<tagname attribute="value">Content</tagname>
+
+EXAMPLE:
+
+<a href="https://example.com">Visit Example</a>
+
+Here:
+
+a      = Element name
+href   = Attribute name
+URL    = Attribute value
+Visit Example = Link text
+
+COMMON ATTRIBUTES:
+
+1. id
+   Identifies an element within a document.
+
+   <h1 id="main-heading">Welcome</h1>
+
+2. class
+   Assigns one or more class names to an element.
+
+   <p class="intro">Introduction paragraph.</p>
+
+3. style
+   Applies inline CSS.
+
+   <p style="color: blue;">Blue text</p>
+
+4. title
+   Provides advisory information, often shown as a tooltip
+   by browsers when applicable.
+
+   <p title="Additional information">Hover over this text.</p>
+
+5. href
+   Specifies a link destination.
+
+   <a href="about.html">About Us</a>
+
+6. src
+   Specifies the source of a resource, such as an image.
+
+   <img src="photo.jpg" alt="A photograph">
+
+7. alt
+   Provides alternative text for an image.
+
+   <img src="logo.png" alt="Company logo">
+
+8. lang
+   Identifies the language of an element's content.
+
+   <html lang="en">
+
+9. width
+   Specifies a width for supported elements.
+
+   <img src="photo.jpg" alt="A photograph" width="300">
+
+10. height
+    Specifies a height for supported elements.
+
+    <img src="photo.jpg" alt="A photograph" height="200">
+
+11. name
+    Names a resource or form control, depending on the element.
+
+    <input type="text" name="username">
+
+12. type
+    Specifies a type or behavior, depending on the element.
+
+    <input type="email">
+
+IMPORTANT ATTRIBUTE RULES:
+
+- Attributes are written inside an opening tag.
+- Most attribute values should be enclosed in quotation marks.
+- Some attributes are global and work on many HTML elements.
+- Other attributes work only with particular elements.
+- Attribute names should be written in lowercase by convention.
+- An element can have multiple attributes.
+
+EXAMPLE:
+
+<img
+    src="student.jpg"
+    alt="Student reading a book"
+    width="300"
+>
+
+This image element has three attributes:
+
+src
+alt
+width
+
